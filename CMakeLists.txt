@@ -16,7 +16,9 @@ find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/BoolStamped.msg"
+  "msg/Ultrasonic.msg"
+  "msg/Voltage.msg"
+  "msg/LineTracker.msg"
   DEPENDENCIES std_msgs sensor_msgs geometry_msgs builtin_interfaces
 )
 
